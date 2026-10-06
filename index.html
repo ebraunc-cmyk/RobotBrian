@@ -9,22 +9,26 @@
 <body>
 
     <div class="dashboard-container">
+        <!-- Panel Izquierdo Informativo -->
         <aside class="sidebar">
             <h2>Gemini Hub</h2>
             <div class="status-box">
-                <p>🔒 Servidor local activo. Clave Auth Key (AQ) protegida.</p>
+                <p>🔒 Servidor activo mediante la SDK oficial en la nube de Google.</p>
             </div>
         </aside>
 
+        <!-- Área Principal del Chat -->
         <main class="main-content">
             <header>
                 <h1>Asistente de Texto Inteligente</h1>
             </header>
 
+            <!-- Respuestas de la IA -->
             <section class="response-area" id="responseArea">
                 <div class="placeholder-text">Escribe un mensaje abajo para empezar...</div>
             </section>
 
+            <!-- Caja de Entrada -->
             <section class="input-panel">
                 <div class="input-wrapper">
                     <textarea id="textInput" placeholder="Escribe tu consulta aquí... (Ej: Hola, ¿cómo estás?)"></textarea>
@@ -36,6 +40,8 @@
         </main>
     </div>
 
-    <script src="script.js"></script>
+    <!-- NOTA CRÍTICA: Cambiado a type="module" para que el navegador acepte la SDK de Google -->
+    <script type="module" src="script.js"></script>
 </body>
 </html>
+
