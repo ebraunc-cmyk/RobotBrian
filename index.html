@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Text Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Gemini Hub</h2>
+            <div class="status-box">
+                <p>🔒 Servidor local activo. Clave Auth Key (AQ) protegida.</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Asistente de Texto Inteligente</h1>
+            </header>
+
+            <section class="response-area" id="responseArea">
+                <div class="placeholder-text">Escribe un mensaje abajo para empezar...</div>
+            </section>
+
+            <section class="input-panel">
+                <div class="input-wrapper">
+                    <textarea id="textInput" placeholder="Escribe tu consulta aquí... (Ej: Hola, ¿cómo estás?)"></textarea>
+                    <div class="action-buttons">
+                        <button id="sendBtn" class="btn-primary">Enviar a Gemini</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
