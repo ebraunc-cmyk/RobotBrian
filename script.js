@@ -1,5 +1,5 @@
 // REEMPLAZA ÚNICAMENTE LO QUE ESTÁ ENTRE LAS COMILLAS CON TU CLAVE AQ REAL:
-const GEMINI_API_KEY = "AQ..."; 
+const GEMINI_API_KEY = "AQ.Ab8RN6JT76gEeqaNCDA3WDZuLQrdJ1K0FIPlmvKKYXYi9CIxFw"; 
 
 const textInput = document.getElementById('textInput');
 const sendBtn = document.getElementById('sendBtn');
