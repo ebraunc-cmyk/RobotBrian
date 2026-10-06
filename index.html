@@ -5,33 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gemini Text Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Cargamos la librería oficial de Google de forma clásica para evitar bloqueos de GitHub -->
+    <script src="https://unpkg.com"></script>
 </head>
 <body>
 
     <div class="dashboard-container">
-        <!-- Panel Izquierdo Informativo -->
         <aside class="sidebar">
             <h2>Gemini Hub</h2>
             <div class="status-box">
-                <p>🔒 Servidor activo mediante la SDK oficial en la nube de Google.</p>
+                <p>🔒 Servidor conectado a través de la librería oficial de Google.</p>
             </div>
         </aside>
 
-        <!-- Área Principal del Chat -->
         <main class="main-content">
             <header>
                 <h1>Asistente de Texto Inteligente</h1>
             </header>
 
-            <!-- Respuestas de la IA -->
             <section class="response-area" id="responseArea">
                 <div class="placeholder-text">Escribe un mensaje abajo para empezar...</div>
             </section>
 
-            <!-- Caja de Entrada -->
             <section class="input-panel">
                 <div class="input-wrapper">
-                    <textarea id="textInput" placeholder="Escribe tu consulta aquí... (Ej: Hola, ¿cómo estás?)"></textarea>
+                    <textarea id="textInput" placeholder="Escribe tu consulta aquí... (Ej: Hola)"></textarea>
                     <div class="action-buttons">
                         <button id="sendBtn" class="btn-primary">Enviar a Gemini</button>
                     </div>
@@ -40,8 +38,6 @@
         </main>
     </div>
 
-    <!-- NOTA CRÍTICA: Cambiado a type="module" para que el navegador acepte la SDK de Google -->
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
