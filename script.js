@@ -1,5 +1,5 @@
 // COLOCA TU API KEY DE GOOGLE AI STUDIO AQUÍ (REEMPLAZA LAS COMILLAS):
-const GEMINI_API_KEY = "TU_CLAVE_AQ_AQUÍ"; 
+const GEMINI_API_KEY = "AQ.Ab8RN6Lvs2j9j3N7mBiV3bTglbSQoZQRg5gj2aKTkFhttZzm6A"; 
 
 const textInput = document.getElementById('textInput');
 const sendBtn = document.getElementById('sendBtn');
@@ -8,7 +8,7 @@ const responseArea = document.getElementById('responseArea');
 sendBtn.addEventListener('click', async () => {
     const promptText = textInput.value.trim();
 
-    if (GEMINI_API_KEY === "TU_CLAVE_AQ_AQUÍ" || GEMINI_API_KEY.trim() === "") {
+    if (GEMINI_API_KEY === "AQ.Ab8RN6Lvs2j9j3N7mBiV3bTglbSQoZQRg5gj2aKTkFhttZzm6A" || GEMINI_API_KEY.trim() === "") {
         alert("Por favor, introduce tu API Key real en la línea 2 del archivo script.js");
         return;
     }
